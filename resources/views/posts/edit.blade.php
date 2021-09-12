@@ -8,7 +8,7 @@
                 投稿の編集
             </h1>
             
-            <form method="POST" action="{{ route('posts.update', ['post' => $post])}}">
+            <form method="post" action="{{ route('posts.update', ['post' => $post])}}">
                 {{csrf_field()}}
                 {{ method_field('PUT')}}
                 
